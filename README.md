@@ -19,13 +19,13 @@ window.requestAnimationFrame(() => {
 })
 ```
 
-I've notice this trip a few people up on the Elm slack in the past, not realising
-that they need to do this. I also find the code written this way to be a bit
-ugly. To rememdy this I've created **elm-promisify** that turns elm app
-initialisation into a promise (or a 'thenable' if promises aren't supported in
-your browser).
+I've noticed this trip a few people up on the Elm slack in the past, not realising
+that they need to wait for the next animation frame to give Elm time to render.
+I also find the code written this way to be a bit ugly. To rememdy this I've
+created **elm-promisify** that turns elm app initialisation into a promise (or
+a 'thenable' if promises aren't supported in your browser).
 
-The above code can now be rewritten:
+Now, the above code can now be rewritten:
 
 ```javascript
 import { Elm } from './Main.elm'
