@@ -1,0 +1,19 @@
+{
+  "name": "elm-promisify",
+  "version": "1.0.0",
+  "description": "A simple utility to promisify an Elm app.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+
+  },
+  "keywords": [
+    "Elm",
+    "Promise",
+    "Promisify"
+  ],
+  "author": "Andrew Thompson <andrew.thompson@qmul.ac.uk>",
+  "license": "MIT"
+}
